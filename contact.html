@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo image" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fas fa-times" onClick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="course.html">COURSE</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onClick="showMenu()"></i>
+      </nav>
+      <h1>Contact Us</h1>
+    </section>
+
+    <!-- Contact Us Content -->
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57498.00018507175!2d89.22702601456163!3d25.74991157111549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e32de6fca6019b%3A0x9fa496e687f818c8!2sRangpur!5e0!3m2!1sen!2sbd!4v1625179971205!5m2!1sen!2sbd"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fas fa-home"></i>
+            <span>
+              <h5>XYZ Road, ABC Building</h5>
+              <p>Rangpur, Bangladesh</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fas fa-phone"></i>
+            <span>
+              <h5>+008 01722998451</h5>
+              <p>Monday to Saturday, 10pm to 6pm</p>
+            </span>
+          </div>
+
+          <div>
+            <i class="fas fa-envelope"></i>
+            <span>
+              <h5>siddika.tas28@gamil.com</h5>
+              <p>Email us your query</p>
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-col">
+          <form
+            action="https://formspree.io/f/myylpblw"
+            method="post"
+            id="my-form"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email address "
+              required
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Enter your subject"
+              required
+            />
+            <textarea
+              name="message"
+              placeholder="Message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+          <div id="status"></div>
+        </div>
+       
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+
+    <section class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error
+        asperiores <br />
+        eos reiciendis in obcaecati? Similique?
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin-in"></i>
+      </div>
+      <p>Made By <i class="fa fa-heart"></i> Siddiqa Akhter</p>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+    <script src="./main.js"></script>
+  </body>
+</html>
